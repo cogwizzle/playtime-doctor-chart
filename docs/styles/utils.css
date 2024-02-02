@@ -1,0 +1,15 @@
+.center {
+    text-align: center;
+}
+
+.bifold {
+    grid-gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 700px) {
+    .bifold {
+        grid-template-columns: 1fr 1fr;
+    }
+}

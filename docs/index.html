@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playtime Doctor Chart</title>
+    <link rel="stylesheet" href="/styles/pico-1.5.11/css/pico.min.css" />
+    <link rel="stylesheet" href="/styles/utils.css" />
+    <link rel="stylesheet" href="/styles/index.css" />
+</head>
+<body>
+    <main class="container">
+        <form method="get" action="#">
+            <h1 class="center">-Patient Form-</h1>
+            <div class="health-symbol">✚</div>
+            <hr />
+            <h2 class="center">What is wrong?</h2>
+            <div class="bifold">
+                <div class="form-group">
+                    <input type="checkbox" id="fever" name="fever" />
+                    <label for="fever">🥵 Fever</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="cough" name="cough" />
+                    <label for="cough">🤧 Cough</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="sore-throat" name="sore-throat" />
+                    <label for="sore-throat">🤒 Sore Throat</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="headache" name="headache" />
+                    <label for="headache">🤕 Headache</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="broken-bone" name="broken-bone" />
+                    <label for="broken-bone">🦴 Broken Bone</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="upset-stomach" name="upset-stomach" />
+                    <label for="upset-stomach">🤢 Upset Stomach</label>
+                </div>
+            </div>
+            <hr />
+            <h2 class="center">Physical Exam</h2>
+            <div class="bifold">
+                <div class="form-group">
+                    <label for="name">👤 Name</label>
+                    <input type="text" id="name" name="name" />
+                </div>
+                <div class="form-group">
+                    <label for="height">🧍 Height</label>
+                    <select id="height" name="height">
+                        <option selected disabled>Choose...</option>
+                        <option value="short">Short</option>
+                        <option value="average">Average</option>
+                        <option value="tall">Tall</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="weight">🏋️ Weight</label>
+                    <select id="weight" name="weight">
+                        <option selected disabled>Choose...</option>
+                        <option value="light">Light</option>
+                        <option value="normal">Normal</option>
+                        <option value="heavy">Heavy</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="blood-pressure">🩸 Blood Pressure</label>
+                    <input type="text" id="blood-pressure" name="blood-pressure" />
+                </div>
+                <div class="form-group">
+                    <label for="temperature">🌡️ Temperature</label>
+                    <span class="thermometer">
+                        🥶<input type="range" id="temperature" name="temperature" />🥵
+                    </span>
+                </div>
+                <div class="form-group">
+                    <label for="pulse">💓 Pulse</label>
+                    <input type="number" id="pulse" name="pulse" />
+                </div>
+            </div>
+            <hr />
+            <h2 class="center">Diagnosis</h2>
+            <textarea id="diagnosis" name="diagnosis" rows="5" placeholder="What is the diagnosis?"></textarea>
+            <hr />
+            <h2 class="center">Prescription</h2>
+            <textarea id="prescription" name="prescription" rows="5" placeholder="What is the prescription?"></textarea>
+            <hr />
+            <div class="bifold">
+                <div class="form-group">
+                    <label for="doctor-name">👩‍⚕️ Doctor's Name</label>
+                    <input type="text" id="doctor-name" name="doctor-name" />
+                </div>
+                <div class="form-group">
+                    <label for="follow-up-date">📅 Follow Up Date</label>
+                    <input type="date" id="follow-up-date" name="follow-up-date" />
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

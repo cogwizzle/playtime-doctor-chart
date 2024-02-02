@@ -1,0 +1,18 @@
+.health-symbol {
+    color: red;
+    font-size: 68px;
+    text-align: center;
+    width: 100%;
+}
+
+.thermometer {
+    display: flex;
+    flex-direction: row;
+    color: red;
+    width: 100%;
+
+    #temperature {
+        padding-top: 10px;
+        flex:1;
+    }
+}
