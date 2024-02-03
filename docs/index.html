@@ -73,8 +73,9 @@
                 <div class="form-group">
                     <label for="temperature">🌡️ Temperature</label>
                     <span class="thermometer">
-                        🥶<input type="range" id="temperature" name="temperature" />🥵
+                        🥶<input type="range" id="temperature" name="temperature" min="0" max="105" value="98.6" />🥵
                     </span>
+                    <div class="center" id="temperature-output">98.6°F</div>
                 </div>
                 <div class="form-group">
                     <label for="pulse">💓 Pulse</label>
@@ -101,4 +102,5 @@
         </form>
     </main>
 </body>
+<script type="module" src="/src/index.mjs"></script>
 </html>
