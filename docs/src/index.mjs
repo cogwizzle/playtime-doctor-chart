@@ -1,3 +1,5 @@
+import generateRandomPatient from "./generate-random-patient.mjs"
+
 (function () {
     const selector = '.container form .form-group input'
     const inputElements = document.querySelectorAll(selector)
@@ -64,5 +66,24 @@
                 output.textContent = `${value} °F`
             }
         })
+    }
+
+    /**
+     * Form submit event handler.
+     *
+     * @param {Event} event
+     */
+    const onSubmit = (event) => {
+        event.preventDefault()
+        const msg = new SpeechSynthesisUtterance()
+        msg.text = 'Next Patient!'
+        speechSynthesis.speak(msg)
+        scrollTo(0, 0)
+        generateRandomPatient()
+    }
+
+    const form = document.querySelector('form')
+    if (form) {
+        form.addEventListener('submit', onSubmit)
     }
 })()
