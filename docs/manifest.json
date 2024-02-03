@@ -21,7 +21,7 @@
     }
   ],
   "id": "/",
-  "start_url": "/playtime-doctor-chart/",
+  "start_url": "/",
   "background_color": "#ffffff",
   "display": "standalone",
   "scope": "/",
