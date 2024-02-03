@@ -1,15 +1,16 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "paths": {
-      "src/*": ["./src/*"],
-    },
-    "moduleResolution": "node",
     "checkJs": true,
-    "target": "ESNext",
+    "esModuleInterop": true,
     "module": "ESNext",
+    "moduleResolution": "NodeNext",
+    "paths": {
+      "src": ["docs/src/*"],
+    },
+    "resolveJsonModule": true,
     "strictNullChecks": true,
-    "resolveJsonModule": true
+    "target": "ESNext"
   },
   "exclude": ["node_modules"]
 }
