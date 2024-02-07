@@ -21,10 +21,9 @@
     }
   ],
   "id": "/",
-  "start_url": "/",
+  "start_url": ".",
   "background_color": "#ffffff",
   "display": "standalone",
-  "scope": "/",
   "theme_color": "#ffffff",
   "description": "A pretend doctor's chart for kids to play.",
   "screenshots": [
