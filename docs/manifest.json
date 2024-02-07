@@ -5,18 +5,18 @@
     {
       "src": "images/android-chrome-192x192.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "192x192"
     },
     {
       "src": "images/android-chrome-512x512.png",
       "type": "image/png",
-      "sizes": "192x192",
+      "sizes": "512x512",
       "purpose": "maskable"
     },
     {
       "src": "images/apple-touch-icon.png",
       "type": "image/png",
-      "sizes": "512x512",
+      "sizes": "180x180",
       "purpose": "maskable"
     }
   ],
@@ -30,7 +30,15 @@
   "screenshots": [
     {
       "src": "/images/Screenshot.png",
-      "type": "image/png"
+      "type": "image/png",
+      "sizes": "1904x1092",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/images/NarrowScreenshot.png",
+      "type": "image/png",
+      "sizes": "1032x1622",
+      "form_factor": "narrow"
     }
   ]
 }
