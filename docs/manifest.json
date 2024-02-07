@@ -29,13 +29,13 @@
   "description": "A pretend doctor's chart for kids to play.",
   "screenshots": [
     {
-      "src": "/images/Screenshot.png",
+      "src": "images/Screenshot.png",
       "type": "image/png",
       "sizes": "1904x1092",
       "form_factor": "wide"
     },
     {
-      "src": "/images/NarrowScreenshot.png",
+      "src": "images/NarrowScreenshot.png",
       "type": "image/png",
       "sizes": "1032x1622",
       "form_factor": "narrow"
